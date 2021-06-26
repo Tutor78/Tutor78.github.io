@@ -44,6 +44,7 @@ header h1 {
 header h1:hover {
     background-color: var(--tertiary-color);
     border-radius: 10px;
+    text-decoration: underline;
 }
 
 header a {
@@ -75,18 +76,40 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: var(--tertiary-color);
     border-radius: 10px;
+    text-decoration: underline;
 }
 /* Header/Nav Styles End */
 
 /* Hero Styles Start */
 .hero {
+    display: flex;
+    flex-wrap: wrap;
     background-image: url(images/hero-bg.jpg);
     height: 300px;
     background-attachment: fixed;
     background-position: 80%; 
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: space-between;
 }
+
+.hero img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+
+.hero h2 {
+    text-align: center;
+    padding: 15px;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: 75px;
+    background-color: rgba(var(--tertiary-rgb), 0.7);
+    border-radius: 10px;
+}
+
 /* Hero Styles End */
 
 /* About Me Styles Begin */
@@ -95,26 +118,14 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     color: var(--primary-color);
     padding: 15px 0;
+    justify-content: space-between;
+    height: 350px;
 }
 
 .about h2 {
-    font-weight: bold;
     font-size: 56px;
-    padding-right: 15px;
-    border-right: 3px solid var(--primary-color);
-}
-
-.about-info {
-    padding-left: 25px;
-}
-
-.about-info img{
-    height: 300px;
-    width: 300px;
-}
-
-.about-info p {
-    font-size: 20px;
+    margin-left: 15px;
+    padding-top: 125px;
 }
 
 /* Footer Styles Start */
