@@ -27,6 +27,10 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -34,6 +38,11 @@ header h1 {
     font-size: 42px;
     background-color: rgba(var(--tertiary-rgb), 0.7);
     padding: 10px 15px;
+    border-radius: 10px;
+}
+
+header h1:hover {
+    background-color: var(--tertiary-color);
     border-radius: 10px;
 }
 
@@ -67,6 +76,7 @@ header nav ul li a:hover {
     background-color: var(--tertiary-color);
     border-radius: 10px;
 }
+/* Header/Nav Styles End */
 
 /* Hero Styles Start */
 .hero {
@@ -76,4 +86,46 @@ header nav ul li a:hover {
     background-position: 80%; 
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* Hero Styles End */
+
+/* About Me Styles Begin */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--primary-color);
+    padding: 15px 0;
+}
+
+.about h2 {
+    font-weight: bold;
+    font-size: 56px;
+    padding-right: 15px;
+    border-right: 3px solid var(--primary-color);
+}
+
+.about-info {
+    padding-left: 25px;
+}
+
+.about-info img{
+    height: 300px;
+    width: 300px;
+}
+
+.about-info p {
+    font-size: 20px;
+}
+
+/* Footer Styles Start */
+footer {
+    background: var(--tertiary-color);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer h2 {
+    padding-bottom: 5px;
+    text-decoration: underline;
 }
