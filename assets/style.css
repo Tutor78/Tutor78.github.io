@@ -109,28 +109,27 @@ header nav ul li a:hover {
     background-color: rgba(var(--tertiary-rgb), 0.7);
     border-radius: 10px;
 }
-
 /* Hero Styles End */
 
 /* About Me Styles Begin */
-.about {
+#about-me {
     display: flex;
     justify-content: space-between;
     color: var(--primary-color);
     padding: 15px 0;
 }
 
-.about h2 {
+.about {
     text-align: center;
     font-size: 56px;
     margin-right: auto;
-    margin-left: 15px;
-    padding-right: 15px;
-    padding-top: 100px;
+    margin-left: 53px;
+    padding-right: 50px;
     border-right: 3px solid var(--primary-color);
+    vertical-align: middle;
 }
 
-.about-info p {
+.about-info {
     padding: 5px 0;
     align-items: center;
     margin: 5px 25px;
@@ -138,6 +137,97 @@ header nav ul li a:hover {
     font-size: 18px;
 }
 /* About Me Styles End */
+
+/* Portfolio Styles Begin */
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    display: flex;
+    height: fit-content;
+    background-color: var(--tertiary-color);
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 56px;
+    margin-right: auto;
+    margin-left: 15px;
+    padding-right: 15px;
+    border-right: 3px solid var(--secondary-color);
+}
+
+/* .projects {  
+    Add CSS here later as needed for projects class
+} */
+
+/* Main Project Styling */
+.main-project {
+    margin-left: 100px;
+}
+
+.main-project a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.main-project a:hover {
+    text-decoration: underline;
+}
+
+.main-project img {
+    height: 385px;
+    width: 90%;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.main-project h3 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-project p {
+    text-align: center;
+}
+/* Main Project Styling Ends */
+
+/* Secondary Project Styling Begins */
+.secondary-projects {
+    margin: 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.secondary-projects a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.secondary-projects a:hover {
+    text-decoration: underline;
+}
+
+.secondary-projects img {
+    height: 200px;
+    width: 375px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.secondary-projects h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secondary-projects p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 
 /* Footer Styles Start */
 footer {
