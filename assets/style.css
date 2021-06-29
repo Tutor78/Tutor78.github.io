@@ -27,10 +27,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
 }
 
 header h1 {
@@ -39,12 +35,14 @@ header h1 {
     background-color: rgba(var(--tertiary-rgb), 0.7);
     padding: 10px 15px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 header h1:hover {
     background-color: var(--tertiary-color);
     border-radius: 10px;
     text-decoration: underline;
+    margin: 10px;
 }
 
 header a {
@@ -68,7 +66,7 @@ header nav ul li a {
     margin: 0 5px;
     padding: 10px 10px;
     font-weight: lighter;
-    font-size: 1.5vw;
+    font-size: 26px;
     background-color: rgba(var(--tertiary-rgb), 0.7);
     border-radius: 10px;
 }
@@ -82,10 +80,8 @@ header nav ul li a:hover {
 
 /* Hero Styles Start */
 .hero {
-    display: flex;
-    flex-wrap: wrap;
     background-image: url(images/hero-bg.jpg);
-    height: 300px;
+    height: 225px;
     background-attachment: fixed;
     background-position: 80%; 
     background-repeat: no-repeat;
@@ -93,26 +89,20 @@ header nav ul li a:hover {
     justify-content: space-between;
 }
 
-.hero img {
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
-    margin-left: 25px;
-}
-
 .hero h2 {
     text-align: center;
+    width: fit-content;
     padding: 15px;
+    margin-left: auto;
     margin-right: 50px;
     margin-top: auto;
-    margin-bottom: 75px;
     background-color: rgba(var(--tertiary-rgb), 0.7);
     border-radius: 10px;
 }
 /* Hero Styles End */
 
 /* About Me Styles Begin */
-#about-me {
+.about-me {
     display: flex;
     justify-content: space-between;
     color: var(--primary-color);
@@ -136,6 +126,15 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 18px;
 }
+
+.about-info img {
+    float: left;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+
 /* About Me Styles End */
 
 /* Portfolio Styles Begin */
@@ -157,13 +156,15 @@ header nav ul li a:hover {
     border-right: 3px solid var(--secondary-color);
 }
 
-/* .projects {  
-    Add CSS here later as needed for projects class
-} */
+.projects {  
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Main Project Styling */
 .main-project {
-    margin-left: 100px;
+    margin: 0 50px;
+    width: fit-content;
 }
 
 .main-project a {
@@ -177,7 +178,7 @@ header nav ul li a:hover {
 
 .main-project img {
     height: 385px;
-    width: 90%;
+    width: 100%;
     border: 2px solid var(--secondary-color);
     border-radius: 10px;
 }
@@ -215,6 +216,7 @@ header nav ul li a:hover {
     width: 375px;
     border: 2px solid var(--secondary-color);
     border-radius: 10px;
+    margin: 10px;
 }
 
 .secondary-projects h3 {
@@ -225,9 +227,57 @@ header nav ul li a:hover {
 
 .secondary-projects p {
     text-align: center;
-    margin-bottom: 10px;
+}
+/* Portfolio Styling Ends */
+
+/* Contact Me Styling Begins */
+.contact{
+    display: flex;
+    height: 250px;
+    padding: 10px 0;
+    color: var(--primary-color);
 }
 
+.contact h2 {
+    text-align: center;
+    font-size: 42px;
+    margin: 5px 20px;
+    padding-right: 25px;
+    border-right: 3px solid var(--primary-color);
+}
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+} 
+
+.contact ul li a {
+    padding: 10px 10px;
+    font-weight: lighter;
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.git-link {
+    padding-bottom: 15px;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact ul li h3 {
+    text-align: center;
+    font-size: 26px;
+    padding-top: 5px;
+}
+
+/* Contact Me Styling Ends */
 
 /* Footer Styles Start */
 footer {
@@ -240,4 +290,87 @@ footer {
 footer h2 {
     padding-bottom: 5px;
     text-decoration: underline;
+}
+
+/* Begin Media Query */
+@media screen and (max-width: 980px) {
+    .contact ul li a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-project img {
+        height: 300px;
+    }
+
+    .contact h2 {
+        margin-left: 22px;
+        padding-right: 60px;
+        padding-left: 30px;
+    }
+
+    .contact ul {
+        justify-content: space-around;
+    }
+
+    .git {
+        padding-right: 50px;
+        margin-top: 10px;
+    }
+    
+    .link {
+        padding-right: 43px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header h1 {
+        margin: 2px auto;
+    }
+
+    header nav {
+        margin: 15px auto;
+    }
+
+    .hero h2 {
+        margin: 0 auto;
+    }
+
+    .about-me, .portfolio, .contact {
+        flex-direction: column;
+    }
+
+    .about {
+        border: 0px;
+        text-decoration: underline;
+        margin: 10px auto;
+    }
+
+    .portfolio h2 {
+        border: 0;
+        text-decoration: underline;
+        margin: 10px auto;
+    }
+
+    .contact h2 {
+        font-size: 56px;
+        border: 0;
+        text-decoration: underline;
+        margin: 10px auto;
+    }
+
+    .contact ul li a {
+        font-size: 26px;
+        justify-content: space-evenly;
+    }
+
+    .git {
+        padding-left: 14px;
+        margin-right: 25px;
+    }
+
+    .link {
+        padding-right: 61px;
+    }
 }
