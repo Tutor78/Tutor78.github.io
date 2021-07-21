@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #343a40;
+}
+
+/* custom nav styles */
+.navbar-brand {
+    font-size: 2rem;
+}
+
+nav a {
+    font-size: 1.5rem;
+}
+/* custom hero stylings */
+#hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 500px;
+    width: 100%;
+    background-position: center;
+}
+
+/* custom about me styles */
+#about-me {
+    padding: 5px;
+}
+#about-me h2 {
+    font-size: 2.5rem;
+}
+
+.paragraphs {
+    border-left: solid 2px black;
+}
+
+.paragraphs img {
+    width: 315px;
+    height: 315px;
+}
+
+.paragraphs p {
+    text-indent: 2%;
+    font-size: 1.25rem;
+}
+
+/* media queries */
+@media screen and (max-width: 992px) {
+    #hero {
+        height: 400px;
+    }
+
+    #about-me h2 {
+        font-size: 2rem;
+    }
+
+    .paragraphs {
+        border: none;
+        border-top: solid 2px black;
+    }
+
+    .paragraphs img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .paragraphs p {
+        font-size: 1.15rem;
+    }
+}
