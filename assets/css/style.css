@@ -8,8 +8,12 @@
 }
 
 /* general ustom styles */
-.section-header {
+.primary-header {
     border-right: solid 3px black;
+}
+
+.secondary-header {
+    border-right: solid 3px white;
 }
 
 /* custom nav styles */
@@ -50,13 +54,15 @@ nav a {
 .project-card img{
     height: 80%;
     width: 100%;
+    border: solid 3px rgb(170, 170, 19);
 }
 
 .project-card a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-align: center;
 }
+
 
 /* contact info custom stylings */
 .contact-info div a {
