@@ -8,7 +8,7 @@ Hello. This is my portfolio website where I will be showcasing some projects and
 
 ![Alt text](assets/images/screenshot.jpg "screenshot of my portfolio")
 
-## Languages
+## Languages/Frameworks
 
 - HTML
-- CSS
+- CSS/Bootstrap
