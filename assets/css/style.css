@@ -47,9 +47,15 @@ nav a {
 }
 
 /* custom portfolio stylings */
-#portfolio img {
-    height: 100%;
+.project-card img{
+    height: 80%;
     width: 100%;
+}
+
+.project-card a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
 }
 
 /* contact info custom stylings */
@@ -57,7 +63,6 @@ nav a {
     color: black;
     text-decoration: none;
 }
-
 
 /* media queries */
 @media screen and (max-width: 992px) {
