@@ -57,12 +57,20 @@ nav a {
     border: solid 3px rgb(170, 170, 19);
 }
 
-.project-card a {
-    color: white;
-    text-decoration: none;
+.project-card h5 {
+    font-size: 1.75rem;
     text-align: center;
 }
 
+.project-info {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.project-info a {
+    color: white;
+    text-decoration: none;
+}
 
 /* contact info custom stylings */
 .contact-info div a {
