@@ -115,6 +115,10 @@ nav a {
     .paragraphs p {
         font-size: 1.15rem;
     }
+
+    .project-info {
+        margin-bottom: 5px;
+    }
 }
 
 
