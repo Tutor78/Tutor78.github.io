@@ -89,13 +89,21 @@ nav a {
     }
 
     .paragraphs,
-    .projects,
     .contact-info {
         border: none;
         border-top: solid 2px black;
     }
 
-    .section-header {
+    .projects {
+        border: none;
+        border-top: solid 2px white;
+    }
+
+    .primary-header {
+        border: none;
+    }
+
+    .secondary-header {
         border: none;
     }
 
