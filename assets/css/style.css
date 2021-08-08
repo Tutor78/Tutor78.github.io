@@ -72,6 +72,10 @@ nav a {
     text-decoration: none;
 }
 
+.project-info p {
+    margin-bottom: 5rem;
+}
+
 /* contact info custom stylings */
 .contact-info div a {
     color: black;
@@ -116,8 +120,8 @@ nav a {
         font-size: 1.15rem;
     }
 
-    .project-info {
-        margin-bottom: 5px;
+    .project-card {
+        margin-bottom: 10px;
     }
 }
 
