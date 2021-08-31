@@ -1,0 +1,61 @@
+body {
+    background-image: url('../videos/index-bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header nav {
+    padding: 5px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav ul {
+    margin-left: auto;
+}
+
+header .navbar-dark {
+    background-color: transparent;
+}
+
+header .navbar-brand {
+    font-size: 2rem;
+    color: white;
+}
+
+header nav .nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.fa-chevron-circle-down {
+    color: white;
+}
+
+main {
+    text-align: center;
+    margin-top: 25vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main h1 {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+main p {
+    color: white;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    margin: auto;
+    padding: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    header nav .nav-link {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
